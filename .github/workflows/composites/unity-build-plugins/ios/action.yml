@@ -30,7 +30,7 @@ runs:
         cd unity
         npm i
         cd ${{ inputs.build_proj_dir }}
-        node ../cli make --platform ios --backend ${{ inputs.backend }} --config ${{ inputs.config }} --websocket ${{ inputs.websocket }}
+        node ../cli make --platform ios --backend ${{ inputs.backend }} --config ${{ inputs.config }}
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
