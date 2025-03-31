@@ -35,5 +35,5 @@ runs:
     - name: Upload
       uses: actions/upload-artifact@v123
       with:
-        path: ./unity/Assets/core/upm/Plugins/**/*
+        path: ./unity/Assets/core/upm/**/*
         name: Unity_Plugins (${{ inputs.backend }}_${{ inputs.config }})
